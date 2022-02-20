@@ -1,0 +1,9 @@
+.vscode/
+.*.sw?
+.idea/
+.DS_Store
+*.json
+bin
+*workspace
+env.conf
+real_domains.conf
