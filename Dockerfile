@@ -9,7 +9,7 @@ RUN go mod download
 COPY . .
 RUN GO111MODULE=on CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags '-w -extldflags "-static"' -o wlrm .
 
-FROM alpine:3.11.5
+FROM alpine:3.15
 LABEL version=0.3
 LABEL wlrm=check
 ENV WALLARM_API='api.wallarm.com' \
