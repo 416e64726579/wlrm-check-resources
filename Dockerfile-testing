@@ -1,4 +1,4 @@
-FROM alpine:3.11.5
+FROM alpine:3.16.7
 LABEL wlrm=check
 ENV WALLARM_API='api.wallarm.com' \
     USER_UID=1001
